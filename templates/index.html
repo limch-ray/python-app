@@ -1,0 +1,27 @@
+ <style>
+.container {
+  height: 400px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style> 
+<meta charset="UTF-8">
+<title>The Berkeley Project</title>
+<body style="background-color:white">
+{% if result %}
+<div class="container">
+  <div class="center">
+	<center><h1>You are the {{ result }} visitor</h1></center>
+  </div>
+</div>
+{% endif %}
+</body>
