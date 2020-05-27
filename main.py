@@ -30,4 +30,4 @@ def show_landing():
 	return render_template('index.html', result=visitor, content_type='application/json')
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', debug=True)
+	app.run(host='0.0.0.0', debug=False)
